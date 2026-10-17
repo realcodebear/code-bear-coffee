@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cold Start Cold Brew — Code Bear Coffee</title>
+<meta name="description" content="Slow-steeped for 18 hours, canned cold, ready in one second. Smooth, low acid, zero setup. The fastest boot time in coffee.">
+<link rel="canonical" href="https://realcodebear.github.io/code-bear-coffee/p/cold-start.html">
+<meta property="og:site_name" content="Code Bear Coffee"><meta property="og:title" content="Cold Start Cold Brew — Code Bear Coffee">
+<meta property="og:description" content="Slow-steeped for 18 hours, canned cold, ready in one second. Smooth, low acid, zero setup. The fastest boot time in coffee."><meta property="og:image" content="https://realcodebear.github.io/code-bear-coffee/img/cold-start.jpg">
+<meta property="og:type" content="website"><meta name="theme-color" content="#1c130f">
+<link rel="icon" href="../img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+:root{--esp:#1c130f;--esp2:#2a1d17;--cream:#f4ebdd;--cream2:#e9dcc8;--orange:#d9622b;--mocha:#7a5644;--ink:#1c130f;
+--fd:'Fraunces',Georgia,serif;--fb:'Inter',system-ui,sans-serif;--fm:'JetBrains Mono',ui-monospace,monospace}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--cream);color:var(--ink);font-family:var(--fb);font-size:17px;line-height:1.55}
+a{color:inherit}
+img{display:block;max-width:100%}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+header{position:sticky;top:0;z-index:10;background:rgba(28,19,15,.94);backdrop-filter:blur(8px);color:var(--cream)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;font-family:var(--fd);font-weight:700;font-size:21px;letter-spacing:.2px}
+.logo img{width:40px;height:40px;border-radius:50%;background:var(--cream)}
+nav a{text-decoration:none;margin-left:28px;font-size:15px;opacity:.85}
+nav a:hover{opacity:1;color:var(--orange)}
+.hero{position:relative;color:var(--cream);background:var(--esp) center/cover no-repeat;min-height:620px;display:flex;align-items:center}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(28,19,15,.95) 0%,rgba(28,19,15,.75) 38%,rgba(28,19,15,.05) 75%)}
+.hero .wrap{position:relative;width:100%}
+.kicker{font-family:var(--fm);font-size:13px;letter-spacing:2px;text-transform:uppercase;color:var(--orange)}
+.hero h1{font-family:var(--fd);font-size:68px;line-height:1.02;font-weight:700;max-width:560px;margin:14px 0 18px}
+.hero p{max-width:470px;font-size:19px;opacity:.9}
+.btn{display:inline-block;margin-top:28px;background:var(--orange);color:#fff;text-decoration:none;font-weight:600;padding:15px 28px;border-radius:999px}
+.btn.ghost{background:transparent;border:1.5px solid var(--cream);margin-left:12px}
+section{padding:96px 0}
+h2{font-family:var(--fd);font-size:44px;line-height:1.1;margin:10px 0 14px}
+.lead{max-width:620px;color:var(--mocha);font-size:18px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:48px}
+.card{background:#fff;border-radius:22px;overflow:hidden;text-decoration:none;display:flex;flex-direction:column;box-shadow:0 1px 0 rgba(0,0,0,.04);transition:transform .2s}
+.card:hover{transform:translateY(-4px)}
+.card img{aspect-ratio:4/5;object-fit:cover;background:var(--cream2)}
+.card .body{padding:20px 22px 24px;display:flex;flex-direction:column;gap:6px;flex:1}
+.card h3{font-family:var(--fd);font-size:23px}
+.card .kind{font-family:var(--fm);font-size:12px;color:var(--mocha);letter-spacing:.5px}
+.card .row{display:flex;justify-content:space-between;align-items:center;margin-top:auto;padding-top:12px}
+.price{font-weight:700;font-size:20px}
+.tag{font-size:12px;font-weight:600;background:var(--cream);color:var(--mocha);padding:6px 12px;border-radius:999px}
+.dark{background:var(--esp);color:var(--cream)}
+.dark .lead{color:#cbb8a6}
+.why{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:44px}
+.why div{border-top:2px solid var(--orange);padding-top:18px}
+.why h3{font-family:var(--fd);font-size:24px;margin-bottom:8px}
+.why p{color:#cbb8a6}
+.split{display:grid;grid-template-columns:1.1fr 1fr;gap:56px;align-items:center}
+.split img{border-radius:22px}
+.quote{font-family:var(--fd);font-size:30px;line-height:1.25;margin-top:22px}
+footer{background:var(--esp2);color:#cbb8a6;padding:48px 0;font-size:15px}
+footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.pd{display:grid;grid-template-columns:1fr 1fr;gap:56px;padding:64px 0 96px;align-items:start}
+.pd img{border-radius:24px;background:#fff}
+.pd h1{font-family:var(--fd);font-size:52px;line-height:1.05;margin:12px 0}
+.pd .price{font-size:28px;margin:8px 0 18px;display:block}
+.pd ul{margin:22px 0 0 20px}
+.pd li{margin:6px 0}
+.back{display:inline-block;margin-top:28px;font-size:15px;color:var(--mocha)}
+.soon{display:inline-block;margin-top:26px;background:var(--esp);color:var(--cream);padding:14px 26px;border-radius:999px;font-weight:600}
+@media(max-width:900px){.grid,.why{grid-template-columns:1fr 1fr}.split,.pd{grid-template-columns:1fr}.hero h1{font-size:48px}}
+@media(max-width:600px){.grid,.why{grid-template-columns:1fr}nav a{margin-left:14px}.wrap{padding:0 16px}h2{font-size:34px}}
+</style>
+<script type="application/ld+json">{
+ "@context": "https://schema.org",
+ "@type": "Product",
+ "name": "Cold Start Cold Brew",
+ "description": "Slow-steeped for 18 hours, canned cold, ready in one second. Smooth, low acid, zero setup. The fastest boot time in coffee.",
+ "sku": "cold-start",
+ "image": "https://realcodebear.github.io/code-bear-coffee/img/cold-start.jpg",
+ "brand": {
+  "@type": "Brand",
+  "name": "Code Bear Coffee"
+ },
+ "url": "https://realcodebear.github.io/code-bear-coffee/p/cold-start.html",
+ "offers": {
+  "@type": "Offer",
+  "price": "12.00",
+  "priceCurrency": "USD",
+  "availability": "https://schema.org/PreOrder"
+ }
+}</script>
+</head><body>
+<header><div class="wrap">
+<a class="logo" href="../index.html"><img src="../img/logo.png" alt="Code Bear Coffee logo">Code Bear Coffee</a>
+<nav><a href="../index.html#shop">Shop</a><a href="../index.html#why">Why us</a><a href="../index.html#story">Story</a></nav>
+</div></header>
+<div class="wrap pd">
+<img src="../img/cold-start.jpg" alt="Cold Start Cold Brew">
+<div><span class="kicker">4 × 250 ml cans</span><h1>Cold Start Cold Brew</h1>
+<span class="price">$12.00</span>
+<p class="lead">Slow-steeped for 18 hours, canned cold, ready in one second. Smooth, low acid, zero setup. The fastest boot time in coffee.</p>
+<ul><li>18-hour slow steep</li><li>Low acid, no sugar added</li><li>Ready to drink, no equipment</li></ul>
+<span class="soon">Launching soon</span><br>
+<a class="back" href="../index.html#shop">← Back to all coffees</a></div></div>
+<footer><div class="wrap">
+<div><strong style="color:#f4ebdd">Code Bear Coffee</strong><br>Coffee for people who ship.</div>
+<div>Small-batch roasts for long sessions.<br>Online shop launching soon.</div>
+<div>© 2026 Code Bear Coffee</div>
+</div></footer></body></html>
